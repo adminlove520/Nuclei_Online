@@ -69,8 +69,8 @@ jobs:
           git add vuln.txt
       - name: Commit results to Github
         run: |
-          git config --local user.email "xxx@xx.com"
-          git config --global user.name "xxx"
+          git config --local user.email "791751568@qq.com"
+          git config --global user.name "adminlove520"
           git commit -m "Nuclei Report" -a --allow-empty
       - name: Push changes
         uses: ad-m/github-push-action@master
