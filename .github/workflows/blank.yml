@@ -35,11 +35,10 @@ jobs:
         shell: bash
 
       - name: Running ParamSpider
-        uses: actions/setup-python@v3
-        with:
-          python-version: '3.x'
+        shell: bash
         run: |
-          pip3 install -r ParamSpider/requirements.txt
+          cd ParamSpider
+          pip3 install -r requirements.txt
           chmod +x run.py
           python3 run.py
         
