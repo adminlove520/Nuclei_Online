@@ -32,9 +32,6 @@ jobs:
           GO111MODULE: on
         run: |
           go install -v github.com/projectdiscovery/nuclei/v2/cmd/nuclei@latest
-          go build; \
-          mv nuclei /usr/local/bin/; \
-          nuclei -version;
           
         shell: bash
 
