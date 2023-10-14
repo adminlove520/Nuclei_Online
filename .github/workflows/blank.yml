@@ -35,6 +35,7 @@ jobs:
         shell: bash
 
       - name: Running ParamSpider
+        shell: bash
         uses: actions/setup-python@v3
         with:
           python-version: '3.x'
