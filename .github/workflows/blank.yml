@@ -1,0 +1,78 @@
+name: Incloud_Github_Fuzzing
+
+on:
+    workflow_dispatch:
+
+jobs:
+
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repo
+        uses: actions/checkout@master
+
+      - name: Set up Go
+        uses: actions/setup-go@v2
+        with:
+          go-version: '1.20'
+
+      - name: Setup Dependencies
+        run: sudo apt-get install libpcap-dev
+        
+      - name: Cache Go
+        id: cache-go
+        uses: actions/cache@v2
+        with:
+          path: /home/runner/go
+          key: ${{ runner.os }}-go
+      - name: Setting up ProjectDiscovery tools
+        if: steps.cache-go.outputs.cache-hit != 'true'
+        env:
+          GO111MODULE: on
+        run: |
+          go install -v github.com/projectdiscovery/nuclei/v2/cmd/nuclei@latest
+          
+        shell: bash
+
+      - name: Running ParamSpider
+        shell: bash
+        run: |
+          pip3 install -r ParamSpider/requirements.txt
+          chmod +x run.py
+          python3 run.py
+        
+
+      - name: Running nuclei-fuzzing scaning
+        run: |
+          nuclei -l output/output.txt -rl 300 -bs 35 -c 30  -mhe 10 -ni -t fuzzing-templates/ -stats -silent -severity critical,medium,high,low -o output/vuln.txt | tee output/vuln.txt
+        shell: bash
+
+      - name: Sorting the output results
+        run: |
+          find output -type f -exec sort {} -o {} \;
+        shell: bash
+
+      - name: Create local changes
+        run: |
+          git add output/vuln.txt
+          
+        shell: bash
+
+      - name: Sorting the output results
+        run: |
+          find output -type f -exec sort {} -o {} \;
+        shell: bash
+
+      - name: Create local changes
+        run: |
+          git add output/vuln.txt
+      - name: Commit results to Github
+        run: |
+          git config --local user.email "791751568@qq.com"
+          git config --global user.name "adminlove520"
+          git commit -m "Nuclei Report" -a --allow-empty
+      - name: Push changes
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: ${{ github.ref }}
