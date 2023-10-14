@@ -11,6 +11,13 @@ jobs:
       - name: Checkout Repo
         uses: actions/checkout@master
 
+      - name: Checkout ParamSpider
+        uses: actions/checkout@v2
+        with:
+        repository: 0xKayala/ParamSpider  
+        path: ParamSpider
+
+
       - name: Set up Go
         uses: actions/setup-go@v2
         with:
