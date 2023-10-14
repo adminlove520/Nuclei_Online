@@ -1,0 +1,21 @@
+id: joomla-panel
+
+info:
+  name: Joomla! Panel
+  author: its0x08
+  severity: info
+  metadata:
+    max-request: 1
+  tags: panel,joomla
+
+http:
+  - method: GET
+    path:
+      - "{{BaseURL}}/administrator/"
+
+    matchers:
+      - type: word
+        words:
+          - '<meta name="generator" content="Joomla! - Open Source Content Management" />'
+          - '/administrator/templates/isis/images/joomla.png'
+        condition: or

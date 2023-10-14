@@ -1,0 +1,20 @@
+id: newrelic-rest-api-key
+
+info:
+  name: REST API Key Disclosure
+  author: Ice3man
+  severity: info
+  metadata:
+    max-request: 1
+  tags: exposure,token
+
+http:
+  - method: GET
+    path:
+      - "{{BaseURL}}"
+
+    extractors:
+      - type: regex
+        part: body
+        regex:
+          - '(?i)NRRA-[a-f0-9]{42}'

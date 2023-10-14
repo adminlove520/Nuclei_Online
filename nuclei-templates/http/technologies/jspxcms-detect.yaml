@@ -1,0 +1,25 @@
+id: jspxcms-detect
+
+info:
+  name: Jspxcms Detect
+  author: princechaddha
+  severity: info
+  metadata:
+    max-request: 1
+  tags: tech,jspxcms
+
+http:
+  - method: GET
+    path:
+      - "{{BaseURL}}"
+
+    matchers-condition: and
+    matchers:
+      - type: word
+        part: body
+        words:
+          - "Jspxcms"
+
+      - type: status
+        status:
+          - 200

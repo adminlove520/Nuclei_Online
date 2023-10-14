@@ -1,0 +1,20 @@
+id: artifactory-api-token
+
+info:
+  name: Artifactory API Token Disclosure
+  author: Ice3man
+  severity: info
+  metadata:
+    max-request: 1
+  tags: exposure,token,artifactory
+
+http:
+  - method: GET
+    path:
+      - "{{BaseURL}}"
+
+    extractors:
+      - type: regex
+        part: body
+        regex:
+          - '(?:\s|=|:|"|^)AKC[a-zA-Z0-9]{10,}'

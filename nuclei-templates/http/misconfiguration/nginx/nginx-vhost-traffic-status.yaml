@@ -1,0 +1,29 @@
+id: nginx-vhost-traffic-status
+
+info:
+  name: Nginx Vhost Traffic Status
+  author: geeknik
+  severity: low
+  reference:
+    - https://github.com/vozlt/nginx-module-vts
+  metadata:
+    max-request: 1
+  tags: status,nginx,misconfig
+
+http:
+  - method: GET
+    path:
+      - "{{BaseURL}}/status"
+
+    matchers-condition: and
+    matchers:
+      - type: word
+        words:
+          - "Nginx Vhost Traffic Status"
+          - "Host"
+          - "Zone"
+        condition: and
+
+      - type: status
+        status:
+          - 200

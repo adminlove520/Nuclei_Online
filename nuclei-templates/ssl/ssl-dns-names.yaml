@@ -1,0 +1,18 @@
+id: ssl-dns-names
+
+info:
+  name: SSL DNS Names
+  author: pdteam
+  severity: info
+  description: |
+    Extract the Subject Alternative Name (SAN) from the target's certificate. SAN facilitates the usage of additional hostnames with the same certificate.
+  metadata:
+    max-request: 1
+  tags: ssl
+ssl:
+  - address: "{{Host}}:{{Port}}"
+
+    extractors:
+      - type: json
+        json:
+          - ".subject_an[]"
