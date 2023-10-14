@@ -1,9 +1,0 @@
-[submodule "ParamSpider"]
-	path = ParamSpider
-	url = https://github.com/0xKayala/ParamSpider.git
-[submodule "fuzzing-templates"]
-	path = fuzzing-templates
-	url = https://github.com/projectdiscovery/fuzzing-templates.git
-[submodule "nuclei"]
-	path = nuclei
-	url = https://github.com/projectdiscovery/nuclei.git
