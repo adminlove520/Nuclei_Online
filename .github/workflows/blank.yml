@@ -45,8 +45,7 @@ jobs:
 
       - name: Running nuclei-fuzzing scaning
         run: |
-          # nuclei -l output.txt -rl 300 -bs 35 -c 30  -mhe 10 -ni -t fuzzing-templates/ -stats -silent -severity critical,medium,high,low -o vuln.txt | tee vuln.txt
-          nuclei -l output.txt -t fuzzing-templates/  -o vuln.txt
+          nuclei -l output.txt -t nuclei-templates/  -o vuln.txt
         shell: bash
 
       - name: Sorting the output results
