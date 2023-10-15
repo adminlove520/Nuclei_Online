@@ -1,0 +1,115 @@
+[options-method] [http] [info] http://182.92.209.87:8081 [GET,HEAD,POST,PUT,PATCH,DELETE,OPTIONS]
+[xss-deprecated-header] [http] [info] http://182.92.209.87:8081 [1; mode=block]
+[httponly-cookie-detect] [http] [info] http://182.92.103.212:8080/
+[httponly-cookie-detect] [http] [info] http://hgccglxcx.glthougu.cn/
+[httponly-cookie-detect] [http] [info] http://182.92.185.169:8081/
+[fingerprinthub-web-fingerprints:ruoyi-system] [http] [info] http://hgccglxcx.glthougu.cn/login
+[fingerprinthub-web-fingerprints:ruoyi-system] [http] [info] http://182.92.185.169:8081/login
+[tech-detect:font-awesome] [http] [info] http://hgccglxcx.glthougu.cn/login
+[tech-detect:bootstrap] [http] [info] http://hgccglxcx.glthougu.cn/login
+[tech-detect:nginx] [http] [info] http://hgccglxcx.glthougu.cn/login
+[tech-detect:font-awesome] [http] [info] http://182.92.185.169:8081/login
+[tech-detect:bootstrap] [http] [info] http://182.92.185.169:8081/login
+[fingerprinthub-web-fingerprints:ruoyi-system] [http] [info] http://182.92.103.212:8080/login
+[tech-detect:nginx] [http] [info] http://hgccglxcx.glthougu.cn/
+[tech-detect:bootstrap] [http] [info] http://182.92.103.212:8080/login
+[tech-detect:font-awesome] [http] [info] http://182.92.103.212:8080/login
+[public-tomcat-manager] [http] [info] http://hgccglxcx.glthougu.cn/manager/html
+[druid-panel] [http] [info] http://182.92.209.87:8081/druid/login.html
+[tomcat-exposed-docs] [http] [info] http://hgccglxcx.glthougu.cn/docs/
+[http-missing-security-headers:cross-origin-embedder-policy] [http] [info] http://103.146.159.218
+[http-missing-security-headers:cross-origin-opener-policy] [http] [info] http://103.146.159.218
+[http-missing-security-headers:strict-transport-security] [http] [info] http://103.146.159.218
+[http-missing-security-headers:x-permitted-cross-domain-policies] [http] [info] http://103.146.159.218
+[http-missing-security-headers:referrer-policy] [http] [info] http://103.146.159.218
+[http-missing-security-headers:x-content-type-options] [http] [info] http://103.146.159.218
+[http-missing-security-headers:clear-site-data] [http] [info] http://103.146.159.218
+[http-missing-security-headers:cross-origin-resource-policy] [http] [info] http://103.146.159.218
+[http-missing-security-headers:content-security-policy] [http] [info] http://103.146.159.218
+[http-missing-security-headers:permissions-policy] [http] [info] http://103.146.159.218
+[http-missing-security-headers:x-frame-options] [http] [info] http://103.146.159.218
+[http-missing-security-headers:clear-site-data] [http] [info] http://182.92.209.87:8081
+[http-missing-security-headers:cross-origin-embedder-policy] [http] [info] http://182.92.209.87:8081
+[http-missing-security-headers:cross-origin-opener-policy] [http] [info] http://182.92.209.87:8081
+[http-missing-security-headers:permissions-policy] [http] [info] http://182.92.209.87:8081
+[http-missing-security-headers:x-frame-options] [http] [info] http://182.92.209.87:8081
+[http-missing-security-headers:referrer-policy] [http] [info] http://182.92.209.87:8081
+[http-missing-security-headers:cross-origin-resource-policy] [http] [info] http://182.92.209.87:8081
+[http-missing-security-headers:strict-transport-security] [http] [info] http://182.92.209.87:8081
+[http-missing-security-headers:content-security-policy] [http] [info] http://182.92.209.87:8081
+[http-missing-security-headers:x-permitted-cross-domain-policies] [http] [info] http://182.92.209.87:8081
+[http-missing-security-headers:x-permitted-cross-domain-policies] [http] [info] http://182.92.103.212:8080/login
+[http-missing-security-headers:cross-origin-opener-policy] [http] [info] http://182.92.103.212:8080/login
+[http-missing-security-headers:content-security-policy] [http] [info] http://182.92.103.212:8080/login
+[http-missing-security-headers:permissions-policy] [http] [info] http://182.92.103.212:8080/login
+[http-missing-security-headers:x-content-type-options] [http] [info] http://182.92.103.212:8080/login
+[http-missing-security-headers:referrer-policy] [http] [info] http://182.92.103.212:8080/login
+[http-missing-security-headers:clear-site-data] [http] [info] http://182.92.103.212:8080/login
+[http-missing-security-headers:cross-origin-embedder-policy] [http] [info] http://182.92.103.212:8080/login
+[http-missing-security-headers:cross-origin-resource-policy] [http] [info] http://182.92.103.212:8080/login
+[http-missing-security-headers:strict-transport-security] [http] [info] http://182.92.103.212:8080/login
+[http-missing-security-headers:x-frame-options] [http] [info] http://182.92.103.212:8080/login
+[old-copyright] [http] [info] http://182.92.103.212:8080/login [© 2020 ]
+[http-missing-security-headers:permissions-policy] [http] [info] http://hgccglxcx.glthougu.cn/login
+[http-missing-security-headers:x-permitted-cross-domain-policies] [http] [info] http://hgccglxcx.glthougu.cn/login
+[http-missing-security-headers:cross-origin-embedder-policy] [http] [info] http://hgccglxcx.glthougu.cn/login
+[http-missing-security-headers:cross-origin-resource-policy] [http] [info] http://hgccglxcx.glthougu.cn/login
+[http-missing-security-headers:content-security-policy] [http] [info] http://hgccglxcx.glthougu.cn/login
+[http-missing-security-headers:x-frame-options] [http] [info] http://hgccglxcx.glthougu.cn/login
+[http-missing-security-headers:x-content-type-options] [http] [info] http://hgccglxcx.glthougu.cn/login
+[http-missing-security-headers:referrer-policy] [http] [info] http://hgccglxcx.glthougu.cn/login
+[http-missing-security-headers:clear-site-data] [http] [info] http://hgccglxcx.glthougu.cn/login
+[http-missing-security-headers:cross-origin-opener-policy] [http] [info] http://hgccglxcx.glthougu.cn/login
+[http-missing-security-headers:strict-transport-security] [http] [info] http://hgccglxcx.glthougu.cn/login
+[old-copyright] [http] [info] http://hgccglxcx.glthougu.cn/login [© 2022-2025]
+[http-missing-security-headers:strict-transport-security] [http] [info] http://182.92.185.169:8081/login
+[http-missing-security-headers:x-frame-options] [http] [info] http://182.92.185.169:8081/login
+[http-missing-security-headers:clear-site-data] [http] [info] http://182.92.185.169:8081/login
+[http-missing-security-headers:cross-origin-embedder-policy] [http] [info] http://182.92.185.169:8081/login
+[http-missing-security-headers:cross-origin-opener-policy] [http] [info] http://182.92.185.169:8081/login
+[http-missing-security-headers:cross-origin-resource-policy] [http] [info] http://182.92.185.169:8081/login
+[http-missing-security-headers:content-security-policy] [http] [info] http://182.92.185.169:8081/login
+[http-missing-security-headers:permissions-policy] [http] [info] http://182.92.185.169:8081/login
+[http-missing-security-headers:x-content-type-options] [http] [info] http://182.92.185.169:8081/login
+[http-missing-security-headers:x-permitted-cross-domain-policies] [http] [info] http://182.92.185.169:8081/login
+[http-missing-security-headers:referrer-policy] [http] [info] http://182.92.185.169:8081/login
+[old-copyright] [http] [info] http://182.92.185.169:8081/login [© 2018-2021]
+[external-service-interaction] [http] [info] http://ckllhmvckp5rt8p0hi6gjczj9pwob49aw.oast.live/login
+[external-service-interaction] [http] [info] http://ckllhmvckp5rt8p0hi6ggxuoxuowh7sjz.oast.live/login
+[external-service-interaction] [http] [info] http://182.92.103.212:8080/
+[external-service-interaction] [http] [info] http://182.92.185.169:8081/
+[tomcat-manager-pathnormalization] [http] [info] http://hgccglxcx.glthougu.cn/2WmZDE7mS7qYACWUm389PNaX4dJ/..;/manager/html
+[tomcat-scripts] [http] [info] http://hgccglxcx.glthougu.cn/examples/jsp/index.html
+[tomcat-scripts] [http] [info] http://hgccglxcx.glthougu.cn/examples/websocket/index.xhtml
+[tomcat-scripts] [http] [info] http://hgccglxcx.glthougu.cn/examples/servlets/servlet/SessionExample
+[tomcat-detect:version] [http] [info] http://hgccglxcx.glthougu.cn/docs/introduction.html [9.0.65]
+[shiro-detect] [http] [info] http://hgccglxcx.glthougu.cn/login
+[shiro-detect] [http] [info] http://hgccglxcx.glthougu.cn/
+[shiro-detect] [http] [info] http://182.92.103.212:8080/login
+[shiro-detect] [http] [info] http://182.92.103.212:8080/
+[shiro-detect] [http] [info] http://182.92.185.169:8081/login
+[shiro-detect] [http] [info] http://182.92.185.169:8081/
+[spring-detect] [http] [info] http://182.92.209.87:8081/error
+[waf-detect:nginxgeneric] [http] [info] http://hgccglxcx.glthougu.cn/
+[cors-misconfig:arbitrary-origin] [http] [info] http://182.92.209.87:8081 [cors_origin="https://efa2d209.87"]
+[mysql-detect] [tcp] [info] 182.92.103.212:3306
+[mysql-detect] [tcp] [info] 182.92.209.87:3306
+[mysql-detect] [tcp] [info] 182.92.185.169:3306
+[openssh-detect] [tcp] [info] 103.146.159.218:22 [SSH-2.0-OpenSSH_7.4]
+[openssh-detect] [tcp] [info] 182.92.185.169:22 [SSH-2.0-OpenSSH_8.0]
+[openssh-detect] [tcp] [info] 182.92.209.87:22 [SSH-2.0-OpenSSH_7.4]
+[openssh-detect] [tcp] [info] 182.92.103.212:22 [SSH-2.0-OpenSSH_8.0]
+[rdp-detect:win2016] [tcp] [info] hgccglxcx.glthougu.cn:3389
+[mysql-native-password] [tcp] [info] 182.92.209.87:3306
+[mysql-native-password] [tcp] [info] 182.92.185.169:3306
+[mysql-native-password] [tcp] [info] 182.92.103.212:3306
+[ssl-issuer] [ssl] [info] hgccglxcx.glthougu.cn:443 [DigiCert Inc]
+[ssl-dns-names] [ssl] [info] hgccglxcx.glthougu.cn:443 [hgccglxcx.glthougu.cn]
+[deprecated-tls] [ssl] [info] hgccglxcx.glthougu.cn:443 [ssl30]
+[deprecated-tls] [ssl] [info] hgccglxcx.glthougu.cn:443 [tls10]
+[deprecated-tls] [ssl] [info] hgccglxcx.glthougu.cn:443 [tls11]
+[tls-version] [ssl] [info] hgccglxcx.glthougu.cn:443 [tls10]
+[weak-cipher-suites:tls-1.0] [ssl] [low] hgccglxcx.glthougu.cn:443 [[tls10 TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA]]
+[tls-version] [ssl] [info] hgccglxcx.glthougu.cn:443 [tls11]
+[weak-cipher-suites:tls-1.1] [ssl] [low] hgccglxcx.glthougu.cn:443 [[tls11 TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA]]
+[tls-version] [ssl] [info] hgccglxcx.glthougu.cn:443 [tls12]
